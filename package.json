@@ -1,10 +1,10 @@
 {
-  "name": "quill-mention",
-  "version": "0.2.7",
-  "description": "@mentions for the Quill rich text editor",
-  "main": "src/quill.mention.js",
-  "repository": "https://github.com/afconsult/quill-mention.git",
-  "author": "Fredrik Sundqvist <fsundqvist@gmail.com>",
+  "name": "quill-hashtag",
+  "version": "1.0.0",
+  "description": "#hashtags for the Quill rich text editor",
+  "main": "src/quill.hashtag.js",
+  "repository": "https://github.com/DetectiveQuack/quill-hashtags.git",
+  "author": "Saffaanh Soobratty <saff.soobratty@gmail.com>",
   "license": "MIT",
   "files": [
     "src",
@@ -15,15 +15,10 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.8",
-    "eslint": "^4.15.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.6",
@@ -34,22 +29,15 @@
   "dependencies": {
     "quill": "^1.3.4"
   },
-  "eslintConfig": {
-    "extends": "airbnb",
-    "env": {
-      "browser": true
-    }
-  },
   "scripts": {
     "watch": "webpack --watch --progress --mode production",
-    "start": "webpack-dev-server --hot --open",
+    "start": "webpack-dev-server --hot --open --mode development",
     "build": "webpack --mode production",
     "publish": "npm publish"
   },
   "keywords": [
     "quill",
-    "mentions",
     "autocomplete",
-    "mention"
+    "hashtag"
   ]
 }

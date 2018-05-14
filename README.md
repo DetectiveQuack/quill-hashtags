@@ -1,31 +1,24 @@
-![Quill Mention](static/quill-mention.png "Quill Mention")
 # Quill Mention
-[![npm version](https://badge.fury.io/js/quill-mention.svg)](https://badge.fury.io/js/quill-mention)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Quill Mention is a module to provide @mentions functionality for the [Quill](https://quilljs.com/) rich text editor.
-
-## Demo
-https://afconsult.github.io/projects/quill-mention/
-
-![Mention Demo GIF](static/mention.gif "Mention Demo GIF")
 
 ## Getting Started
 ### Install
 Install with npm:
 ```bash
-npm install quill-mention --save
+npm install quill-hashtag --save
 ```
 Install with [Yarn](https://yarnpkg.com/en/):
 ```bash
-yarn add quill-mention
+yarn add quill-hashtag
 ```
 
 ### Example
 ```javascript
 const values = [
-  { id: 1, value: 'Fredrik Sundqvist' },
-  { id: 2, value: 'Patrik Sjölin' }
+  { id: 1, value: 'Hashtag1' },
+  { id: 2, value: 'Hashtag' }
 ];
 const quill = new Quill(editor, {
   modules: {
@@ -56,13 +49,6 @@ const quill = new Quill(editor, {
 | `maxChars`           | `31`           | Maximum number of characters after the @ symbol triggering a search request |
 | `offsetTop`          | `2`            | Additional top offset of the mention container position |
 | `offsetLeft`         | `0`            | Additional left offset of the mention container position |
-
-
-## Authors
-
-**Fredrik Sundqvist** ([MadSpindel](https://github.com/MadSpindel))
-
-See also the list of [contributors](https://github.com/afconsult/quill-mention/contributors) who participated in this project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

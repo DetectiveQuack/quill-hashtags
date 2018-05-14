@@ -1,0 +1,40 @@
+.ql-hashtag-list-container {
+    width: 270px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+}
+
+.ql-hashtag-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ql-hashtag-list-item {
+    cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+.ql-hashtag-list-item.selected {
+    background-color: #d3e1eb;
+    text-decoration: none;
+}
+
+.hashtag {
+    height: 24px;
+    width: 65px;
+    border-radius: 6px;
+    background-color: #d3e1eb;
+    padding: 3px 0;
+}
+
+.hashtag > span {
+    margin: 0 3px;
+}

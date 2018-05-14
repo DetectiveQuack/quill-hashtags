@@ -2,13 +2,16 @@ import Quill from 'quill';
 
 const Embed = Quill.import('blots/embed');
 
+class HashtagBlot extends Embed {
+  static blotName = 'hashtag';
+  static tagName = 'span';
+  static className = 'hashtag';
 
-class MentionBlot extends Embed {
   static create(data) {
     const node = super.create();
     const atSign = document.createElement('span');
-    atSign.className = 'ql-mention-at-sign';
-    atSign.innerHTML = '@';
+    atSign.className = 'ql-hashtag-at-sign';
+    atSign.innerHTML = '#';
     node.appendChild(atSign);
     node.innerHTML += data.value;
     node.dataset.id = data.id;
@@ -24,8 +27,4 @@ class MentionBlot extends Embed {
   }
 }
 
-MentionBlot.blotName = 'mention';
-MentionBlot.tagName = 'span';
-MentionBlot.className = 'mention';
-
-Quill.register(MentionBlot);
+Quill.register(HashtagBlot);
