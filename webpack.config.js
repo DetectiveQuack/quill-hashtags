@@ -40,9 +40,9 @@ module.exports = [
             ]
         },
         plugins: [
-            //   new UglifyJSPlugin({
-            //     extractComments: true,
-            //   }),
+              new UglifyJSPlugin({
+                extractComments: true,
+              }),
             new ExtractTextPlugin('quill.hashtag.min.css')
         ]
     }
