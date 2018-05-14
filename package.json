@@ -1,6 +1,6 @@
 {
   "name": "quill-hashtag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "#hashtags for the Quill rich text editor",
   "main": "src/quill.hashtag.js",
   "repository": "https://github.com/DetectiveQuack/quill-hashtags.git",
